@@ -28,6 +28,10 @@ class HospitalAppointment(models.Model):
     prescription = fields.Html(string='Description')
     prescription_line_ids = fields.One2many('appointment.prescription.lines', 'appointment_id',
                                             string="Prescription Lines")
+    
+    lanaguage = fields.Char(
+        string='Lanaguage', 
+        required=False)
 
     def action_confirm(self):
         self.state = 'confirm'
