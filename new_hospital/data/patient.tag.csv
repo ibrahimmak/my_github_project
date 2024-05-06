@@ -1,0 +1,5 @@
+id,name,activity
+patient_tag_mrs,Mrs,True
+patient_tag_vvip,VVIP,True
+patient_tag_ceo,CEO,True
+patient_tag_orphan,Orphan,False
